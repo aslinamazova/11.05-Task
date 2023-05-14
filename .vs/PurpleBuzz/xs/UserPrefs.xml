@@ -2,47 +2,82 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Admin/Views/Category/Index.cshtml">
     <Files>
-      <File FileName="Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Models/Category.cs" Line="3" Column="1" />
-      <File FileName="Models/Service.cs" Line="18" Column="2" />
-      <File FileName="Models/ServiceImage.cs" Line="5" Column="2" />
-      <File FileName="Models/Slider.cs" Line="11" Column="1" />
-      <File FileName="Program.cs" Line="10" Column="1" />
-      <File FileName="DAL/AppDbContext.cs" Line="20" Column="1" />
-      <File FileName="Controllers/HomeController.cs" Line="8" Column="2" />
-      <File FileName="Controllers/AboutController.cs" Line="16" Column="6" />
-      <File FileName="ViewModel/HomeVM.cs" Line="13" Column="1" />
-      <File FileName="Views/_ViewImports.cshtml" Line="5" Column="1" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="27" Column="82" />
+      <File FileName="DAL/AppDbContext.cs" Line="17" Column="43" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Views/_ViewImports.cshtml" Line="1" Column="1" />
       <File FileName="Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Views/About/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="26" Column="8" />
-      <File FileName="appsettings.json" Line="3" Column="17" />
+      <File FileName="Views/About/Index.cshtml" Line="10" Column="26" />
+      <File FileName="Views/Home/Index.cshtml" Line="24" Column="1" />
+      <File FileName="ViewModel/HomeVM.cs" Line="1" Column="1" />
+      <File FileName="Models/Slider.cs" Line="14" Column="1" />
+      <File FileName="Models/ServiceImage.cs" Line="1" Column="1" />
+      <File FileName="Models/Service.cs" Line="19" Column="29" />
+      <File FileName="Models/Category.cs" Line="8" Column="40" />
+      <File FileName="Controllers/AboutController.cs" Line="16" Column="6" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Migrations/20230511064755_initial.cs" Line="1" Column="1" />
+      <File FileName="Views/Work/Index.cshtml" Line="7" Column="1" />
+      <File FileName="Views/Work/Create.cshtml" Line="20" Column="1" />
+      <File FileName="Migrations/AppDbContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="Areas/Admin/ViewModels/ServiceVM.cs" Line="11" Column="1" />
+      <File FileName="Areas/Admin/Controllers/HomeController.cs" Line="10" Column="5" />
+      <File FileName="Areas/Admin/Controllers/CategoryController.cs" Line="21" Column="1" />
+      <File FileName="Areas/Admin/Controllers/WorkController.cs" Line="49" Column="26" />
+      <File FileName="Areas/Admin/Views/Category/Index.cshtml" Line="35" Column="8" />
+      <File FileName="Areas/Admin/Views/Category/Create.cshtml" Line="17" Column="15" />
+      <File FileName="Areas/Admin/Views/Category/Update.cshtml" Line="18" Column="7" />
+      <File FileName="Areas/Admin/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Areas/Admin/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Areas/Admin/Views/_ViewImports.cshtml" Line="6" Column="1" />
+      <File FileName="Areas/Admin/Views/Shared/_Layout.cshtml" Line="284" Column="29" />
+      <File FileName="Models/Work.cs" Line="12" Column="44" />
+      <File FileName="Areas/Admin/Controllers/ServiceController.cs" Line="30" Column="10" />
+      <File FileName="Areas/Admin/Views/Service/Create.cshtml" Line="24" Column="23" />
+      <File FileName="Areas/Admin/Views/Service/Index.cshtml" Line="13" Column="44" />
+      <File FileName="Areas/Admin/Views/Service/Update.cshtml" Line="18" Column="48" />
+      <File FileName="Areas/Admin/Controllers/DashboardController.cs" Line="12" Column="24" />
+      <File FileName="Areas/Admin/Views/Dashboard/Index.cshtml" Line="570" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PurpleBuzz" expanded="True">
             <Node name="PurpleBuzz" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Category" expanded="True">
+                      <Node name="Index.cshtml" selected="True" />
+                    </Node>
+                    <Node name="Dashboard" expanded="True" />
+                    <Node name="Home" expanded="True" />
+                    <Node name="Service" expanded="True" />
+                    <Node name="Shared" expanded="True" />
+                    <Node name="Work" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
               <Node name="DAL" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="ViewModel" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="About" expanded="True" />
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="Admin" expanded="True" />
               </Node>
-              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.PurpleBuzz PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
