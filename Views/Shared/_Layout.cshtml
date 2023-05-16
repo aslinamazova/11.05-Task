@@ -198,13 +198,14 @@
     <!-- Isotope -->
     <script src="~/assets/js/isotope.pkgd.js"></script>
     <!-- Page Script -->
-    <script>$(window).load(function () {
+    <script>
+        $(window).load(function() {
             // init Isotope
             var $projects = $('.projects').isotope({
                 itemSelector: '.project',
                 layoutMode: 'fitRows'
             });
-            $(".filter-btn").click(function () {
+            $(".filter-btn").click(function() {
                 var data_filter = $(this).attr("data-filter");
                 $projects.isotope({
                     filter: data_filter
@@ -215,7 +216,8 @@
                 $(this).addClass("shadow");
                 return false;
             });
-        });</script>
+        });
+    </script>
     <!-- Templatemo -->
     <script src="~/assets/js/templatemo.js"></script>
     <!-- Custom -->

@@ -3,46 +3,59 @@
     int count = 1;
 }
 
-<div class="col-lg-12 stretch-card">
+<div class="d-flex justify-content-end mb-2">
+    <a class="btn btn-success text-light" asp-area="Admin" asp-controller="Category" asp-action="Create">Create Category</a>
+</div>
+<div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Table with contextual classes</h4>
-            <table class="table table-bordered">
-                <thead>
-                    <tr class="table-info">
-                        <th>
-                            Number
-                        </th>
-                        <th>
-                            Category Name
-                        </th>
-
-                    </tr>
-                </thead>
-                <tbody>
-
-                    @foreach (Category item in Model)
-                    {
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
                         <tr>
-                            <td> @count</td>
-
-                            <td>
-                                @item.Name
-                            </td>
-                            <td>
-                                
-                                    <a class="btn btn-info text-light" asp-area="Admin" asp-controller="Category" asp-action="Create">Create Category</a>
-                                
-                                <a class="btn btn-success text-light">Detail</a>
-                                <a class="btn btn-danger text-light" asp-area="Admin" asp-controller="Category" asp-action="Update" asp-route-Id="@item.Id">Update</a>
-                                <a class="btn btn-primary text-light" asp-area="Admin" asp-controller="Category" asp-action="Delete" asp-route-Id="@item.Id">Delete</a>
-                            </td>
+                            <th>
+                                Number
+                            </th>
+                            <th>
+                                Category Name
+                            </th>
+                            
                         </tr>
-                        count++;
-                    }
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+
+                        @foreach (Category item in Model)
+                        {
+                            <tr>
+                                <td> @count</td>
+
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    <a  class="btn btn-primary text-light">Detail</a>
+                                    <a  class="btn btn-warning text-light" asp-area="Admin" asp-controller="Category" asp-action="Update" asp-route-Id="@item.Id">Update</a>
+                                    <a  class="btn btn-danger text-light" asp-area="Admin" asp-controller="Category" asp-action="Delete"  asp-route-Id="@item.Id">Delete</a>
+                                </td>
+                                </tr>
+                                count++;
+                            }
+
+                                @*<td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td>
+                    $ 77.99
+                </td>
+                <td>
+                    May 15, 2015
+                </td>*@
+                           
+                        </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
 </div>

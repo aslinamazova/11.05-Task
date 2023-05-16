@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace PurpleBuzz.Areas.Admin.Controllers
+
+namespace PurpleBuzz.Area.Admin.Controllers
 {
-    [Area("Admin")]
     public class HomeController : Controller
     {
-        
+        [Area("Admin")]
         public IActionResult Index()
         {
             return View();

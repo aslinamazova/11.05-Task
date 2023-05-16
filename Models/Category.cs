@@ -12,6 +12,5 @@ public class Category
     public string Name { get; set; }
     public bool IsDeleted { get; set; }
     public virtual List<Service> Services { get; set; }
-    public virtual List<Work> Works { get; set; }
 }
 

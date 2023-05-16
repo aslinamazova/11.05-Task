@@ -4,8 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Versioning;
 using PurpleBuzz.DAL;
 using PurpleBuzz.Models;
+
+// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace PurpleBuzz.Areas.Admin.Controllers
 {
@@ -38,7 +41,7 @@ namespace PurpleBuzz.Areas.Admin.Controllers
             {
                 return View();
             }
-
+            
             bool isExists = await _context.Categories.AnyAsync(c =>
             c.Name.ToLower().Trim() == category.Name.ToLower().Trim());
 
@@ -51,11 +54,13 @@ namespace PurpleBuzz.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        
         public IActionResult Update(int Id)
         {
             Category? category = _context.Categories.Find(Id);
 
-            if (category == null)
+            if (category==null)
             {
                 return NotFound();
             }
@@ -67,7 +72,7 @@ namespace PurpleBuzz.Areas.Admin.Controllers
         public IActionResult Update(Category category)
         {
             Category? editedCategory = _context.Categories.Find(category.Id);
-            if (editedCategory == null)
+            if (editedCategory==null)
             {
                 return NotFound();
             }
@@ -88,7 +93,6 @@ namespace PurpleBuzz.Areas.Admin.Controllers
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
-
     }
 }
 
